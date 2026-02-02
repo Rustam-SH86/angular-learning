@@ -3,11 +3,16 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: url('../images/backround_img.png');
+
+.page {
+  width: 1110px;
+  margin: 0 auto;
+  background-image: url("../images/backround_img.png");
   background-repeat: no-repeat;
-  background-position: 85px 0px;
+  background-position: 0 0;
+  padding-top: 40px;
   background-size: 790px 697px;
+
 }
 
 .product-card-wrapper {
