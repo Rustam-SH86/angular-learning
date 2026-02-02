@@ -1,0 +1,111 @@
+* {
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../images/backround_img.png');
+  background-repeat: no-repeat;
+  background-position: 85px 0px;
+  background-size: 790px 697px;
+}
+
+.product-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  width: 1110px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+
+.product-card {
+  min-height: 573px;
+  width: 340px;
+  background: #f7f7fa;
+  padding: 24px;
+}
+
+.page-title {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 78px;
+  color: #515076;
+  text-align: center;
+  margin: 80px 0 40px;
+}
+
+.product-card__img {
+  width: 290px;
+  display: block;
+  margin: 0 auto;
+}
+
+.product-card__for-normal-skin {
+  text-transform: uppercase;
+  color: #a5a3b9;
+  line-height: 24px;
+}
+
+.product-card__title {
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 20px;
+  color: #515076;
+}
+
+.product-card__description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+}
+
+.product-card__composition {
+  list-style-type: circle;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+}
+
+.product-card__cream-composition {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+}
+
+.product-card__cream-ingredients {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+}
+
+.product-card__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 36px;
+  max-width: 100%;
+}
+
+.product-card__price-text {
+  width: 56px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #515076;
+}
+
+.product-card__price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #515076;
+}
