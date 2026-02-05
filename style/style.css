@@ -4,12 +4,11 @@
 }
 
 
-.page {
+.page {  
   width: 1110px;
   margin: 0 auto;
-  background-image: url("../images/backround_img.png");
+  background-image: url("../images/background_flowers.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
   padding-top: 40px;
   background-size: 790px 697px;
 
@@ -26,10 +25,10 @@
 }
 
 .product-card {
+  padding: 24px;
   min-height: 573px;
   width: 340px;
   background: #f7f7fa;
-  padding: 24px;
 }
 
 .page-title {
@@ -114,3 +113,19 @@
   line-height: 24px;
   color: #515076;
 }
+
+.color-change-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.recolor-button-color {
+  background-color: #f610e2;
+}
+
+.secondary-color {
+  background-color: aquamarine;
+}
+
