@@ -1,14 +1,12 @@
 console.log("Hello!!!")
 
-
 // recolor the first card
-const recolorFirstCardButton = document.getElementById("recolor-first-color-button")
+const FirstCardRecolorButton = document.getElementById("recolor-first-color-button")
 const firstCatalogCard = document.querySelector('.product-card')
 const redHashColor = "#cf4042";
 
-recolorFirstCardButton.addEventListener('click', () => {
+FirstCardRecolorButton.addEventListener('click', () => {
   firstCatalogCard.style.backgroundColor = redHashColor;
-
 })
 
 // recolor backround cards
@@ -48,11 +46,9 @@ function openGoogle() {
 const pageTitle = document.querySelector(".page-title")
 pageTitle.addEventListener('mouseover', () => {
   console.log(pageTitle.textContent);
-
 });
 
 // 4. Добавить кнопку, при нажатии на которую мы будем менять её цвет с одного на другой. При повторном нажатии цвет меняется с второго на первый.
-
 const recolorButton = document.querySelector(".recolor-button-color")
 recolorButton.addEventListener("click", () => {  
   recolorButton.classList.toggle("secondary-color");

@@ -3,16 +3,13 @@
   box-sizing: border-box;
 }
 
-
-.page {  
+.page {
   width: 1110px;
   margin: 0 auto;
-  background-image: url("../images/background_flowers.png");
+  background-image: url('../images/background_flowers.png');
   background-repeat: no-repeat;
   padding-top: 40px;
   background-size: 790px 697px;
-
-
 }
 
 .product-card-wrapper {
@@ -116,12 +113,10 @@
 }
 
 .color-change-buttons {
-display: flex;
-justify-content: space-between;
-gap: 12px;
-margin-bottom: 24px;
-
-
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 .recolor-button-color {
@@ -131,4 +126,3 @@ margin-bottom: 24px;
 .secondary-color {
   background-color: aquamarine;
 }
-
