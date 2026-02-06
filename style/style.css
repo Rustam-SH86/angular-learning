@@ -12,6 +12,7 @@
   padding-top: 40px;
   background-size: 790px 697px;
 
+
 }
 
 .product-card-wrapper {
@@ -115,10 +116,12 @@
 }
 
 .color-change-buttons {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 24px;
+display: flex;
+justify-content: space-between;
+gap: 12px;
+margin-bottom: 24px;
+
+
 }
 
 .recolor-button-color {
