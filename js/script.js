@@ -59,3 +59,4 @@ const recolorButton = document.querySelector('.recolor-button-color');
 recolorButton.addEventListener('click', () => {
   recolorButton.classList.toggle('secondary-color');
 });
+
