@@ -28,14 +28,14 @@ car.owner = { ...person };
 
 // 5. Написать функцию которая аргументом будет принимать объект, описанный в пункте №4 и проверять, есть ли в объекте свойство "максимальная скорость".
 
-function isHasMaxLimitSpeed(car) {
+function checkMaxSpeed(car) {
   if ('maxSpeed' in car) {
     return;
   } else {
     car.maxSpeed = 250;
   }
 }
-isHasMaxLimitSpeed(car);
+checkMaxSpeed(car);
 
 // 6. Написать функцию, которая получает первым аргументом  — объект и свойство объекта
 
