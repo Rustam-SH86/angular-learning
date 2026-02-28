@@ -88,7 +88,7 @@ const allBooks = [...bookStore, ...bestSellers];
 
 // Написать функцию, которая принимает массив сущностей с задания №9. Добавляем новое свойство для объекта "isRare (это редкий)".
 
-function addIsRare(books) {
+function getIsRare(books) {
   return books.map(book => ({
     ...book,
     isRare: book.yearOfPublication < 1900
