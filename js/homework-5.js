@@ -47,6 +47,3 @@ function getSumOfNumbers(firstNumber, secondNumber) {
 
 // 7. Создать 3 переменных (без разницы каких) и именовать их по своему усмотрению
 
-let priceOfCar = 0;
-const flyDirection = '';
-const sleepTime = 8;
