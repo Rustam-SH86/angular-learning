@@ -39,8 +39,8 @@ addMaxSpeed(car);
 
 // 6. Написать функцию, которая получает первым аргументом  — объект и свойство объекта
 
-function printPropertyOfObject(car, color) {
-  console.log(car[color]);
+function printPropertyOfObject(obj, value) {
+  console.log(obj[value]);
 }
 printPropertyOfObject(car, 'color');
 
@@ -88,11 +88,11 @@ const allBooks = [...bookStore, ...bestSellers];
 
 // Написать функцию, которая принимает массив сущностей с задания №9. Добавляем новое свойство для объекта "isRare (это редкий)".
 
-function getIsRare(books) {
+function getBooksMarkedAsRare(books) {
   return books.map(book => ({
     ...book,
     isRare: book.yearOfPublication < 1900
   }));
 }
-const updatedBooks = addIsRare(allBooks);
+const updatedBooks = getBooksMarkedAsRare(allBooks);
 console.log(updatedBooks);
