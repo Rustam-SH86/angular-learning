@@ -1,14 +1,14 @@
-console.log('Hello!!!');
 
 // recolor the first card
-const FirstCardRecolorButton = document.getElementById(
-  'recolor-first-color-button'
-);
-const firstCatalogCard = document.querySelector('.product-card');
-const redHashColor = '#cf4042';
+const firstCardRecolorButton = document.getElementById("recolor-first-color-button");
+const redHashColor = "#cf4042";
 
-FirstCardRecolorButton.addEventListener('click', () => {
-  firstCatalogCard.style.backgroundColor = redHashColor;
+firstCardRecolorButton.addEventListener("click", () => {
+  const firstCatalogCard = document.querySelector(".product-card");
+
+  if (firstCatalogCard) {
+    firstCatalogCard.style.backgroundColor = redHashColor;
+  }
 });
 
 // recolor backround cards
@@ -23,16 +23,15 @@ recolorBackroundButoon.addEventListener('click', () => {
 });
 
 // recolor all card
-const catalogCards = document.querySelectorAll('.product-card');
-const recolorAllCardsButton = document.querySelector(
-  '.recolor-all-card-button'
-);
-const yellowHashColor = '#d3f31f';
+const recolorAllCardsButton = document.querySelector(".recolor-all-card-button");
+const yellowHashColor = "#d3f31f";
 
-recolorAllCardsButton.addEventListener('click', () => {
-  catalogCards.forEach(
-    (card) => (card.style.backgroundColor = yellowHashColor)
-  );
+recolorAllCardsButton.addEventListener("click", () => {
+  const catalogCards = document.querySelectorAll(".product-card");
+
+  catalogCards.forEach(card => {
+    card.style.backgroundColor = yellowHashColor;
+  });
 });
 
 // переход на страницу Google
