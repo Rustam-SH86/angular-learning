@@ -16,7 +16,7 @@ function getNumberOfCards() {
     return numberOfCardsToDisplay;
   } else {
     alert('You entered invalid number! Please enter a number from 1 to 5');
-    return 0;
+    return getNumberOfCards();
   }
 }
 
@@ -30,7 +30,8 @@ function renderCards(arrayOfProducts) {
     productClone.querySelector('.product-description').textContent =
       product.description;
     productClone.querySelector('.product-type').textContent = product.skinType;
-    productClone.querySelector('.product-price').textContent = product.price;
+    productClone.querySelector('.product-price').textContent =
+      `${product.price} ${product.currency}`;
 
     const compositionList = productClone.querySelector('.product-composition');
 
@@ -42,8 +43,8 @@ function renderCards(arrayOfProducts) {
     });
 
     const img = productClone.querySelector('.product-image');
-    img.src = product.image;
-    img.alt = product.alt;
+    img.src = `images/${product.image}.png`;
+    img.alt = product.image;
 
     productList.appendChild(productClone);
   });
@@ -62,8 +63,7 @@ displayProductCards();
 //4. Используя метод .reduce(), получить массив объектов, где ключем является название продукта, а значением - его описание
 
 const getArrayByReduce = products.reduce((acc, product) => {
-  acc[product.title] = product.description;
-  return acc
-}, {});
-
+  acc.push({ [product.title]: product.description });
+  return acc;
+}, []);
 console.log(getArrayByReduce)
