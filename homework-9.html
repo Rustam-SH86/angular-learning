@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Product shop</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <body style="font-family: 'Montserrat'">
+    <div class="page">
+      <h1 class="page-title">Выбери свой продукт</h1>
+
+      <div class="overlay" id="overlay"></div>
+      <div class="modal" id="modal">
+        <div class="modalwindow-content">
+          <button class="modalwindow-close-button" id="closemodal-button">
+            ×
+          </button>
+          <form id="registration-form">
+            <h2 class="registration-form-title">Регистрация</h2>
+            <p>
+              <label for="name">Введите имя:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Имя"
+                required
+              />
+            </p>
+            <p>
+              <label for="secondName">Введите фамилию:</label>
+              <input
+                type="text"
+                name="secondName"
+                id="secondName"
+                placeholder="Фамилия"
+                required
+              />
+            </p>
+            <p>
+              <label for="birthDate">Дата Рождения:</label>
+              <input type="date" name="birthDate" id="birthDate" required />
+            </p>
+            <p>
+              <label for="login">Логин</label>
+              <input
+                type="text"
+                name="login"
+                id="login"
+                placeholder="логин"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">Пароль</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="пароль"
+                required
+              />
+            </p>
+            <p>
+              <label for="confirmPassword">Подтвердите пароль</label>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPassword"
+                placeholder="подтвердите пароль"
+                required
+              />
+            </p>
+            <button class="submit-form-button" type="submit">
+              Зарегистрироваться
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="color-change-buttons">
+        <button class="registration-button">Registration</button>
+        <button id="recolor-first-color-button">
+          Change the color of the first card
+        </button>
+        <button class="recolor-backround-button">
+          Change the background color
+        </button>
+        <button class="recolor-all-card-button">
+          Change the color of all cards
+        </button>
+        <button id="open-google-button">Go to Google</button>
+        <button class="recolor-button-color">Change this button color</button>
+      </div>
+
+      <div class="product-card-wrapper" id="product-list"></div>
+
+      <template id="product-template">
+        <div class="product-card">
+          <img
+            class="product-card__img product-image"
+            width="290"
+            height="245"
+          />
+          <p class="product-card__for-normal-skin product-type"></p>
+          <h3 class="product-card__title product-title"></h3>
+          <p class="product-card__description product-description"></p>
+          <span class="product-card__cream-composition">Composition:</span>
+          <ul class="product-card__composition product-composition"></ul>
+          <div class="product-card__price-wrapper">
+            <span class="product-card__price-text">Price</span>
+            <span class="product-card__price product-price"></span>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <footer class="footer">
+      <div class="footers-container">
+        <div class="footers-top">
+          <div class="footers-brand">
+            <p class="footers-logo">Product Cards</p>
+            <p class="footer-description">
+              У нас самые лучшие продукты для кожи!
+            </p>
+            <div class="social-icons">
+              <a href="https://t.me/SoulGooddman" target="_blank">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a href="https://vk.com" target="_blank">
+                <i class="fa-brands fa-vk"></i>
+              </a>
+            </div>
+          </div>
+
+          <form class="subscribe-form">
+            <label class="email-box-label">Подпишись на наши акции:</label>
+            <div class="email-box">
+              <input
+                type="email"
+                name="email"
+                placeholder="Введи Email..."
+                required
+              />
+              <span class="divider">|</span>
+              <button type="submit">Подписаться</button>
+            </div>
+          </form>
+          <nav class="menu">
+            <p class="menu-title">Быстрые ссылки</p>
+            <ul class="fast-links">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-line"></div>
+          <p class="footers-copy">
+            www.product-cards.com © all rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/homework-8.js"></script>
+    <script type="module" src="js/homework-9.js"></script>
+    <script src="js/cards-color.js"></script>
+  </body>
+</html>
