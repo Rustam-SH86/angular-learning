@@ -1,4 +1,3 @@
-
 export class Form {
   constructor(formId) {
     this.form = document.querySelector(formId);
@@ -16,4 +15,4 @@ export class Form {
   resetForm() {
     this.form.reset();
   }
-}
+};

@@ -1,7 +1,5 @@
-
-
 export class Modal {
-  constructor(modalId,overlay,closeModalButton) {
+  constructor(modalId, overlay, closeModalButton) {
     this.modalId = modalId;
     this.overlay = overlay;
     this.closeModalButton = closeModalButton;
@@ -14,9 +12,9 @@ export class Modal {
   }
 
   closeModal() {
-  this.modalId.style.display = 'none';
-  this.overlay.style.display = 'none';
-}
+    this.modalId.style.display = 'none';
+    this.overlay.style.display = 'none';
+  }
 
   isModalOpen() {
     return this.modalId.style.display === 'block';
@@ -25,11 +23,6 @@ export class Modal {
   closeModalListener() {
     this.closeModalButton.addEventListener('click', () => {
       this.closeModal();
-    })
-    
+    });
   }
-}
-
-
-
-
+};

@@ -1,5 +1,5 @@
-import { Modal } from './modal.js';
-import { Form } from './form.js';
+import { Modal } from './Modal.js';
+import { Form } from './Form.js';
 
 const overlay = document.querySelector('#overlay');
 const modalId = document.querySelector('#modal');
@@ -47,7 +47,6 @@ registrationForm.form.addEventListener('submit', (event) => {
   const user = {
     ...data,
     password: btoa(data.password),
-    confirmPassword: btoa(data.confirmPassword),
     createdOn: new Date(),
   };
 
