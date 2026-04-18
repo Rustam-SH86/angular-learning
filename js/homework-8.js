@@ -4,6 +4,7 @@
 import { products } from './products.js';
 
 //3. По аналогии из лекции — создать и реализовать шаблон для продуктовых карточек.  (Посмотрите сразу задание 5)
+
 const productTemplate = document.getElementById('product-template');
 const productList = document.getElementById('product-list');
 
@@ -43,7 +44,7 @@ function renderCards(arrayOfProducts) {
     });
 
     const img = productClone.querySelector('.product-image');
-    img.src = `images/${product.image}.png`;
+    img.src = `../images/${product.image}.png`;
     img.alt = product.image;
 
     productList.appendChild(productClone);
