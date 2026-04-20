@@ -1,15 +1,35 @@
 import './cards-color.js';
-import './homework-8.js';
-import './Form.js';
-import './registration-form.js';
-import { Dog } from './homework-10/Dog.js';
-import { Cat } from './homework-10/Cat.js';
+import Cafe from './homework-11/Cafe.js';
+import Coffee from './homework-11/Coffee.js';
+import Tea from './homework-11/Tea.js';
+import Lemonade from './homework-11/Lemonade.js';
 
-const dog = new Dog('Barsik', 12, 'short fur');
-const cat = new Cat('Murka', 5, 'black');
+const cafe = new Cafe('Coffee Hous', 'Baku');
 
-console.log(dog);
-console.log(cat);
+const coffee = new Coffee(
+  'Restretto',
+  'medium',
+  12,
+  90,
+  70,
+  'Brazil',
+  'Almond',
+  'Dark'
+);
 
-dog.saySomething();
-cat.saySomething();
+const tea = new Tea('Green Tea', 'large', 8, 85, 75, 'Green', 'China');
+
+const lemonade = new Lemonade(
+  'Orange Lemonade',
+  'medium',
+  7,
+  5,
+  8,
+  'caramel syrup',
+  'sparkling',
+  true
+);
+
+cafe.getOrder(tea);
+console.log(tea.getTeaInfo());
+tea.addLemon();
