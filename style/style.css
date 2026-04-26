@@ -310,7 +310,11 @@
   z-index: 10;
 }
 
-.modal {
+.overlay-showed {
+  display: block;
+}
+
+.modalwindow {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -329,6 +333,7 @@
   border-radius: 12px;
   min-width: 300px;
   position: relative;
+  width: 320px;
 }
 
 .modalwindow-close-button {
@@ -349,3 +354,21 @@
 .registration-form-title {
   text-align: center;
 }
+
+.login-form label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+
+.login-form-label {
+  text-align: center;
+  margin-bottom: 16px;
+}
+

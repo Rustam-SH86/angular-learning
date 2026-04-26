@@ -9,98 +9,87 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Product shop</title>
   </head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
   <body style="font-family: 'Montserrat'">
     <div class="page">
       <h1 class="page-title">Выбери свой продукт</h1>
+    </div>
+  </body>
+</html>
+<div class="overlay" id="overlay"></div>
+<div class="modalwindow" id="registration-modal">
+  <div class="modalwindow-content">
+    <button class="modalwindow-close-button">×</button>
 
-      <div class="overlay" id="overlay"></div>
-      <div class="modal" id="modal">
-        <div class="modalwindow-content">
-          <button class="modalwindow-close-button" id="closemodal-button">
-            ×
-          </button>
-          <form id="registration-form">
-            <h2 class="registration-form-title">Регистрация</h2>
-            <p>
-              <label for="name">Введите имя:</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Имя"
-                required
-              />
-            </p>
-            <p>
-              <label for="secondName">Введите фамилию:</label>
-              <input
-                type="text"
-                name="secondName"
-                id="secondName"
-                placeholder="Фамилия"
-                required
-              />
-            </p>
-            <p>
-              <label for="birthDate">Дата Рождения:</label>
-              <input type="date" name="birthDate" id="birthDate" required />
-            </p>
-            <p>
-              <label for="login">Логин</label>
-              <input
-                type="text"
-                name="login"
-                id="login"
-                placeholder="логин"
-                required
-              />
-            </p>
-            <p>
-              <label for="password">Пароль</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="пароль"
-                required
-              />
-            </p>
-            <p>
-              <label for="confirmPassword">Подтвердите пароль</label>
-              <input
-                type="password"
-                name="confirmPassword"
-                id="confirmPassword"
-                placeholder="подтвердите пароль"
-                required
-              />
-            </p>
-            <button class="submit-form-button" type="submit">
-              Зарегистрироваться
-            </button>
-          </form>
-        </div>
-      </div>
-      <div class="color-change-buttons">
-        <button class="registration-button">Registration</button>
-        <button id="recolor-first-color-button">
-          Change the color of the first card
-        </button>
-        <button class="recolor-backround-button">
-          Change the background color
-        </button>
-        <button class="recolor-all-card-button">
-          Change the color of all cards
-        </button>
-        <button id="open-google-button">Go to Google</button>
-        <button class="recolor-button-color">Change this button color</button>
-      </div>
+    <form id="registration-form">
+      <h2 class="registration-form-title">Регистрация</h2>
+      <p>
+        <label for="reg-name">Введите имя:</label>
+        <input type="text" name="name" id="reg-name" placeholder="Имя" required />
+      </p>
+      <p>
+        <label for="reg-second-name">Введите фамилию:</label>
+        <input type="text" name="secondName" id="reg-second-name" placeholder="Фамилия" required />
+      </p>
+      <p>
+        <label for="reg-birth-date">Дата Рождения:</label>
+        <input type="date" name="birthDate" id="reg-birth-date" required />
+      </p>
+      <p>
+        <label for="reg-login">Логин</label>
+        <input type="text" name="login" id="reg-login" placeholder="логин" required />
+      </p>
+      <p>
+        <label for="reg-password">Пароль</label>
+        <input type="password" name="password" id="reg-password" placeholder="пароль" required />
+      </p>
+      <p>
+        <label for="reg-confirm-password">Подтвердите пароль</label>
+        <input type="password" name="confirmPassword" id="reg-confirm-password" placeholder="подтвердите пароль" required/>
+      </p>
+      <button class="submit-form-button" type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+</div>
+
+<div class="modalwindow" id="login-modal">
+  <div class="modalwindow-content">
+    <button class="modalwindow-close-button">×</button>
+    <form class="login-form" id="login-form">
+      <h2 class="login-form-label">Логин</h2>
+        <p>
+          <label for="login-username">Username</label>
+          <input type="text" name="login" id="login-username" placeholder="username" autocomplete="username" required />
+        </p>
+        <p>
+          <label for="login-password">Password</label>
+          <input type="password" name="password" id="login-password" placeholder="password" autocomplete="current-password" required />
+        </p>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+<div class="color-change-buttons">
+  <button class="login-button" id="login-button">Login</button>
+  <button class="registration-button" id="registration-button">Registration</button>
+  <button id="recolor-first-card-button">
+    Change the color of the first card
+  </button>
+  <button class="recolor-backround-button">
+    Change the background color
+  </button>
+  <button class="recolor-all-card-button">
+    Change the color of all cards
+  </button>
+  <button id="open-google-button">Go to Google</button>
+  <button class="recolor-button-color">Change this button color</button>
+</div>
 
       <div class="product-card-wrapper" id="product-list"></div>
 
@@ -148,7 +137,7 @@
               <input
                 type="email"
                 name="email"
-                placeholder="Введи Email..."
+                placeholder="Введите Email..."
                 required
               />
               <span class="divider">|</span>
