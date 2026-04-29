@@ -1,34 +1,25 @@
-import { Modal } from './Modal.js';
+import { Modal } from './homework-12/Modal.js';
 import { Form } from './Form.js';
 
-const overlay = document.querySelector('#overlay');
-const modalId = document.querySelector('#modal');
-const closeModalButton = document.querySelector('#closemodal-button');
-const registrationButton = document.querySelector('.registration-button');
+const subscribeFormElement = document.querySelector('.subscribe-form');
+if (subscribeFormElement) {
+  const subscribeForm = new Form('.subscribe-form');
 
-const modal = new Modal(modalId, overlay, closeModalButton);
+  subscribeForm.form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-registrationButton.addEventListener('click', () => {
-  modal.openModal();
-});
+    if (!subscribeForm.isValid()) {
+      console.log('Форма подписки невалидна');
+      return;
+    }
+    const data = subscribeForm.getFormValues();
+    console.log(data);
 
-const subscribeForm = new Form('.subscribe-form');
-subscribeForm.form.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  if (!subscribeForm.isValid()) {
-    console.log('Форма подписки невалидна');
-    return;
-  }
-
-  const data = subscribeForm.getFormValues();
-  console.log(data);
-
-  subscribeForm.resetForm();
-});
+    subscribeForm.resetForm();
+  });
+}
 
 const registrationForm = new Form('#registration-form');
-
 registrationForm.form.addEventListener('submit', (event) => {
   event.preventDefault();
 
@@ -51,7 +42,7 @@ registrationForm.form.addEventListener('submit', (event) => {
   };
 
   console.log('Регистрация успешна', user);
-
   registrationForm.resetForm();
-  modal.closeModal();
+
 });
+
