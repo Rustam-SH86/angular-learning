@@ -1,8 +1,8 @@
-.page-title{
+.page-title {
   text-align: center;
 }
 
-.loader{
+.loader {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -11,11 +11,11 @@
   display: none;
 }
 
-.showLoader{
+.showLoader {
   display: block;
 }
 
-.user-list{
+.user-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -46,9 +46,9 @@
 }
 
 .user-card {
-  border: 1px solid black;  
-  border-radius: 10px;       
-  padding: 10px;             
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
   margin: 5px;
-  background-color: azure;             
+  background-color: azure;
 }

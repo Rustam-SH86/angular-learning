@@ -36,7 +36,7 @@ export async function getUsers() {
   }
 }
 
-export async function setDataInLocalStorage() {
+export async function getUsersFromStorage() {
   const checkDataInStorage = localStorage.getItem('users');
   if (checkDataInStorage) {
     return JSON.parse(checkDataInStorage);

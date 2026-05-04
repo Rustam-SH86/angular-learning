@@ -1,4 +1,4 @@
-import { setDataInLocalStorage, getUsers } from './async.js';
+import { getUsersFromStorage, getUsers } from './async.js';
 import { renderCards } from './cards-render.js';
 import { showInfo, showError, clearMessage } from './messages.js';
 
@@ -7,7 +7,7 @@ const deleteAllUserButton = document.getElementById('delete-all-users-button');
 
 export async function deleteOneUser(id) {
   clearMessage();
-  const users = await setDataInLocalStorage();
+  const users = await getUsersFromStorage();
   const updatedUsers = users.filter((user) => user.id !== id);
   localStorage.setItem('users', JSON.stringify(updatedUsers));
 
