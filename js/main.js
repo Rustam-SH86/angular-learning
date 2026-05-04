@@ -1,8 +1,18 @@
-import './products.js';
-import './registration-form.js';
-import { Modal } from './homework-12/Modal.js';
+import {getUsersFromStorage} from '../async/async.js'
+import {renderCards} from '../async/cards-render.js'
+import '../async/handlers.js'
 
 
+async function init() {
+  try {
+    const users = await getUsersFromStorage();
+    renderCards(users);
+  } 
+  catch (error) {
+    showError('Error loading data');
+    console.log('Loading error', error);
+  }
+};
 
-const registrationModal = new Modal('registration-modal', 'registration-button', false);
-const loginModal = new Modal('login-modal', 'login-button', true);
+init();
+
