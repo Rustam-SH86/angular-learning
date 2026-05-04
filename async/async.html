@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./async.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Product shop</title>
+  </head>
+  <body style="font-family: 'Montserrat'">
+    <div class="loader" id="loader">Loading...</div>
+    <div class="page">
+      <h1 class="page-title">User DB</h1>
+      <div id="message" class="message"></div>
+    <div class="user-card-wrapper" id="user-wrapper-id"></div>
+    <ul class = "user-list" id="user-list"></ul>
+      <template id="user-template">
+        <div class="user-card">
+          <img class="user-image" width="290" height="245"/>
+          <p class="user-id"></p>
+          <p class="user-name"></p>
+          <p class="user-surname"></p>
+          <p class="user-email"></p>
+          <p class="user-age"></p>
+          <p class="user-isActive"></p>
+          <p class="user-role"></p>
+          <button class="user-deleteButton" id="delete-user-button">Delete</button>
+        </div>
+      </template>
+      <div class = "container-buttons">
+          <button id="delete-all-users-button" >Delete all users</button>
+          <button id="get-all-users-button">Download all users</button>
+      </div>
+    </div>
+    </div>
+     <script type="module" src="../js/main.js"></script>
+  </body>

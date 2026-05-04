@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Rustam",
+      "surname": "Rustamov",
+      "email": "rustam@gmail.com",
+      "age": 25,
+      "isActive": true,
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Vlad",
+      "surname": "Ivanov",
+      "email": "vlad@yahoo.com",
+      "age": 30,
+      "isActive": false,
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "name": "Anna",
+      "surname": "Petrova",
+      "email": "anna@gmail.com",
+      "age": 22,
+      "isActive": true,
+      "role": "manager"
+    }
+  ]
+}
